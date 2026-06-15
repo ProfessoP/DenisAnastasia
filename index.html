@@ -1075,9 +1075,26 @@
             data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-320-value="50"
             data-field-left-res-320-value="0" data-field-height-res-320-value="510"
             data-field-width-res-320-value="320">
-            <div class="tn-atom t-bgimg"
-              data-original="images/tild3562-3237-4339-a430-333463303939_3d36b3811ad5c71e6622.jpg" aria-label=""
-              role="img"></div>
+            <div class="tn-atom" style="
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  ">
+              <div style="
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      background-image: url('images/tild3562-3237-4339-a430-333463303939_3d36b3811ad5c71e6622.jpg');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+    "></div>
+            </div>
           </div>
           <div class="t396__elem tn-elem tn-elem__11255793611750676938654 t-animate" data-elem-id="1750676938654"
             data-elem-type="text" data-field-top-value="767" data-field-left-value="320" data-field-height-value="104"
@@ -1961,6 +1978,16 @@
             <div class="tn-atom t-bgimg"
               data-original="images/tild6336-3764-4632-b730-393235313935_1435929392_auto_x2_1.webp" aria-label=""
               role="img"></div>
+          </div>
+          <div class="t396__elem tn-elem tn-elem__11256117861750836405397 t-animate" data-elem-id="1750836405397"
+            data-elem-type="shape" data-field-top-value="321" data-field-left-value="308" data-field-height-value="584"
+            data-field-width-value="584" data-field-axisy-value="top" data-field-axisx-value="left"
+            data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px"
+            data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="fadeinup"
+            data-animate-duration="4" data-animate-distance="20" data-animate-mobile="y"
+            data-field-top-res-320-value="337" data-field-left-res-320-value="0" data-field-height-res-320-value="325"
+            data-field-width-res-320-value="320">
+            <div class="tn-atom t-bgimg" data-original="images/zags.jpeg" aria-label="" role="img"></div>
           </div>
           <div class="t396__elem tn-elem tn-elem__11256117861750676938654 t-animate" data-elem-id="1750676938654"
             data-elem-type="text" data-field-top-value="181" data-field-left-value="320" data-field-height-value="52"
@@ -3139,10 +3166,26 @@
     <!-- t415 -->
     <!-- cover -->
     <div class="t-cover-outer">
-      <div class="t-cover" id="recorddiv1126086541" bgimgfield="img" style="
-       height: 100vh;
-       background-image: url(&quot;images/Airbrush-Image-Enhan.jpeg&quot;);
-      ">
+      <div class="t-cover" id="recorddiv1126086541" style="
+ height: 100vh;
+ position: relative;
+ border-radius: 15px;
+">
+        <!-- Фон с фото и рамкой -->
+        <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/Airbrush-Image-Enhan.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    box-sizing: border-box;
+  ">
+        </div>
         <div class="t-cover__carrier" id="coverCarry1126086541" data-content-cover-id="1126086541"
           data-display-changed="true" data-content-cover-height="100vh" data-content-cover-parallax=""
           data-content-cover-bg="images/tild6339-3666-4531-b539-386235366361_Airbrush-Image-Enhan.jpg"
@@ -3927,13 +3970,13 @@
                         z-index: -1;
                       }
                     </style>
-                    <div id="videoBackground" style="width: 390px; height: 844px">
+                    <div id="videoBackground" style="width: 690px; height: 844px">
                       <video style="
-               object-fit: cover;
-               background-size: cover;
-               width: 100%;
-               height: 100%;
-              " preload="auto" playsinline="" autoplay="" loop="" muted="">
+                                                           object-fit: cover;
+                                                           background-size: cover;
+                                                           width: 100%;
+                                                           height: 100%;
+                                                          " preload="auto" playsinline="" autoplay="" loop="" muted="">
                         <source src="media/2-1.mp4" type="video/mp4" />
                       </video>
                     </div>
@@ -3972,15 +4015,20 @@
                         z-index: -1;
                       }
                     </style>
-                    <div id="videoBackground">
-                      <video style="
-               object-fit: cover;
-               background-size: cover;
-               width: 120%;
-               height: 120%;
-              " preload="auto" playsinline="" autoplay="" loop="" muted="">
-                        <source src="media/2-1.mp4" type="video/mp4" />
-                      </video>
+                    <div id="videoBackground"
+                      style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; overflow: hidden;">
+                      <img src="media/2-1.jpg" style="
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  " alt="Фон">
                     </div>
                     <script>
                       $(document).ready(() => {
@@ -4103,6 +4151,34 @@
   @media screen and (max-width: 980px) {
     #rec1125579356 .tn-elem[data-elem-id="1750676238726"] .tn-atom {
       font-size: 3rem !important;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #rec1125579361 .tn-elem[data-elem-id="1750676850797"] {
+      width: 100% !important;
+      max-width: 100% !important;
+      left: 0 !important;
+      right: 0 !important;
+      margin: 0 auto !important;
+    }
+
+    #rec1125579361 .tn-elem[data-elem-id="1750676850797"] .tn-atom {
+      padding: 15px !important;
+    }
+
+    #rec1125579361 .tn-elem[data-elem-id="1750676850797"] .tn-atom>div {
+      top: 15px !important;
+      left: 15px !important;
+      right: 15px !important;
+      bottom: 15px !important;
+      border-radius: 10px !important;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    #rec1125579361 .tn-elem[data-elem-id="1750676850797"] .tn-atom {
+      padding: 10px !important;
     }
   }
 </style>
